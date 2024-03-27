@@ -1,4 +1,39 @@
 
+TechChallenge
+
+Fase 3 - Pós 2ADJT
+
+Aluno: Gabriel Fellone RM350771
+
+Sobre a solução:
+
+Foram criadas as entidades de Restaurante, Mesa e Avaliacao.
+Onde o mesmo possui a seguinte estrtura:
+
+
+controller – as classes de chamadas de api onde possui os endpoints e resources
+
+entity – as classes de entidades, dominios do sistema
+
+exceptions – exceções personalizadas
+
+repository – possui as classes/interfaces/entidades para banco de dados
+
+services – classes de serviços para manipular os domains, regras de negócio, etc
+
+------------------
+
+
+Roteiro de teste:
+
+O codigo esta no github na MASTER
+
+https://github.com/gabrielfellone/PosTechFase3
+
+
+Comandos:
+
+docker pull cassandra
 
 docker run -d --name cassandra-docker -p 9042:9042 cassandra
 
@@ -42,3 +77,10 @@ CREATE TABLE avaliacao (
     idUsuario int,
     nota int
 );
+
+
+
+Para testar o código é possível entrar no Swagger através da URL
+
+http://localhost:8080/swagger-ui/index.html#/
+
